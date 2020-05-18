@@ -1,0 +1,18 @@
+{
+    "step_name": "data_prep",
+    "version": "1",
+    "allow_reuse": true,
+    "step_type": "PythonScriptStep",
+    "compute_target_name": "cpu0",
+    "datastore_input_name": "dataprep",
+    "dataset_input_name": "PAX1",
+    "datastore_output_name": "workspaceblobstore",
+    "dataset_output_name": "data_prep_output",
+    "script_name": "data_prep.py",
+    "arguments": ["--input-dataset", "PAX1", "--output-dataset", "data_prep_output"],
+    "parameters": {},
+    "conda_packages": ["pandas"],
+    "pip_packages": ["azureml-defaults", "azureml-dataprep[fuse,pandas]"],
+    "python_version": "3.6.2",
+    "framework": "Python"
+}

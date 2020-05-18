@@ -1,0 +1,10 @@
+{
+    "step_name": "data_load",
+    "version": "1",
+    "allow_reuse": true,
+    "step_type": "DatabricksStep",
+    "compute_target_name": "databricks",
+    "existing_cluster_id": "0313-001459-cozy600",
+    "notebook_path": "/Users/marvin.buss1@bp.com/data_load",
+    "parameter": {"environment": "data_load_environment", "start_date": "data_load_start_date", "end_date": "data_load_end_date", "system": "data_load_system", "platform": "data_load_platform"}
+}

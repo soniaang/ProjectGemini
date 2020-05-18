@@ -1,0 +1,17 @@
+{
+    "step_name": "batchinference",
+    "version": "1",
+    "allow_reuse": true,
+    "step_type": "ParallelRunStep",
+    "compute_target_name": "cpu0",
+    "dataset_input_name": "batch_inference_input",
+    "datastore_output_name": "workspaceblobstore",
+    "dataset_output_name": "batch_inference_output",
+    "script_name": "batch_inference.py",
+    "arguments": ["--model-name", "IsolationForest", "--input-dataset", "batch_inference_input", "--output-dataset", "batch_inference_output"],
+    "parameters": {},
+    "conda_packages": [],
+    "pip_packages": ["azureml-defaults", "azureml-dataprep[fuse,pandas]", "scikit-learn", "pandas"],
+    "python_version": "3.6.2",
+    "framework": "Python"
+}
